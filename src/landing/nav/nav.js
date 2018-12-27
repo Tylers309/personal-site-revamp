@@ -2,32 +2,31 @@ import React, { Component } from 'react';
 
 import styled from 'styled-components';
 
-import Landing from './landing/landing';
 
-class App extends Component {
+
+class Landing extends Component {
   render() {
     return (
       <Wrapper>
 
-        <Landing />
 
       </Wrapper>
+      
     );
   }
 }
 
-export default App;
+export default Landing;
 
 
 const Wrapper = styled.div`
   width: 100%;
-  // min-height: 100%;
-  height: 100%;
+  height: 7%;
 
   position: absolute;
 
   top: 0;
   left: 0;
 
-  border: 2px solid red;
+  border: 2px solid green;
 `;
