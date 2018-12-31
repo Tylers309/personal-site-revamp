@@ -9,6 +9,23 @@ class Landing extends Component {
     return (
       <Wrapper>
 
+        <NavLeft>
+          <NavHolder>
+            <NavHeader>
+              Tyler Sutton
+            </NavHeader>
+            
+          </NavHolder>
+        </NavLeft>
+
+        <NavRight>
+          <NavHolder>
+            <NavLinks>
+              Who What Where
+            </NavLinks>
+            
+          </NavHolder>
+        </NavRight>
 
       </Wrapper>
       
@@ -28,5 +45,44 @@ const Wrapper = styled.div`
   top: 0;
   left: 0;
 
-  border: 2px solid green;
+  display: grid;
+
+  grid-template-columns: repeat(6, 1fr);
+
+  grid-template-areas: 
+  "nav-left . . . nav-right nav-right";
+
+`;
+
+
+const NavLeft = styled.div`
+  grid-area: nav-left;
+  
+  display: flex;
+  justify-content: center;
+`;
+
+
+
+const NavRight = styled.div`
+  grid-area: nav-right;
+
+  display: flex;
+  justify-content: center;
+  `;
+
+const NavHolder = styled.div` align-self: center; cursor: pointer;`;
+
+const NavHeader = styled.h1`
+  font-size: 22px;
+  font-weight: 300;
+
+`;
+
+
+const NavLinks = styled.h2`
+  font-size: 22px;
+  font-weight: 100;
+
+  word-spacing: 2em;
 `;
