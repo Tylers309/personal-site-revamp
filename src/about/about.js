@@ -84,7 +84,7 @@ const RightHolder = styled.div`
 
 
 const Hexagon = styled.div`
-
+  // original 100px
   width: 200px;
   height: 200px;
   background: #e8e8e8;
@@ -103,6 +103,7 @@ const EmptyHex = styled(Hexagon)`
 
 `;
 const HexTopRow = styled.div`
+  //original 75px
   height: 150px;
   width: auto;
 
@@ -110,12 +111,15 @@ const HexTopRow = styled.div`
 
 
 const HexMidRow = styled(HexTopRow)`
+  // original 50px
   padding-left: 100px;
   
+  //original 25px
   transform: translateY(-50px);
 `;
 
 const HexBotRow = styled(HexTopRow)`
+  //original 50px
   transform: translateY(-100px);
 `;
 
