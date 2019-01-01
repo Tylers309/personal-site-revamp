@@ -13,12 +13,12 @@
 
 
   
-  /* border: 1px solid blue; */
+  /* border: 1px solid blue;    */
 }
 
 html, body, #root, .wrapper{
   height: 100%;
   width: 100%;
 
-  overflow-y: hidden;
+  overflow-X: hidden;
 }

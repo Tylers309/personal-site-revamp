@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import Landing from './landing/landing';
+import About from './about/about';
 
 import './App.css';
 
@@ -13,6 +14,8 @@ class App extends Component {
       <Wrapper>
 
         <Landing />
+
+        <About />
 
       </Wrapper>
     );
