@@ -13,7 +13,21 @@ class About extends Component {
     return (
       <Wrapper>
         <AboutLeft>
+          <LeftHolder>
+            <Header>About the guy behind the <code>&lt;code/&gt;</code></Header>
+            <AboutText>
+              Hi, I am Tyler Sutton! I am a 17 year old Website Designer and Developer.
+              I started my journey into this awesome world of development all over one 
+              thought about how the internet works. I read an article about the basics of the internet (ip addresses, servers) on <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work" target="_blank">MDN</a>.
+              I read and read, not fully understanding it all, but still enjoying having someone able to answer my questions. I read some more until I stumbled upon a link
+               on <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">how to build a website</a>. I had heard of coding and actually
+              taken a course in Visual Basic and C# *Yawn* but creating ugly calculators really didn't appeal to my 14 year old mind, until I discovered how easy it is to make beautiful websites. 
+              I read all of Mozilla's articles read all of W3 schools articles on HTMl, CSS, Javascript and did all the tutorials I could find. And I started to code my own sites. The first (dozen) sites were (really) bad 
+              but I kept on and grew more and more fond of the idea of sharing knowledge via the internet and I wanted to be a part of it more and more. So I created more and more test websites till I created my own and for 
+              friends and family. I keep refining my skills everyday. (In fact, this site you are on is it's third full iteration!) I hope you have found my story entertaining, that you understand a little more about me and my journey, and maybe help inspire you to start your own. 
 
+            </AboutText>
+          </LeftHolder>
         </AboutLeft>
 
         <AboutRight>
@@ -29,8 +43,13 @@ class About extends Component {
             </HexTopRow>
             <HexMidRow>
               <Hexagon>
+                <Img src={tylerRaptor} alt="kajsdlkfj" />
+              </Hexagon>                
+
+
+              <Hexagon >
+                <Img src={luke} alt="Tyler Sutton" />
               </Hexagon>
-              <Hexagon />
               <Hexagon>
               </Hexagon>
             </HexMidRow>
@@ -72,6 +91,39 @@ const AboutLeft = styled.div`
   float: left;
 
 `;
+
+const LeftHolder = styled.div`
+  align-self: center;
+
+  max-width: 70%;
+`;
+
+const Header = styled.h2`
+  font-size: 45px;
+  font-weight: 100;
+
+  color: #2f2e2e;
+`;
+
+const AboutText = styled.p`
+  font-size: 15px;
+  font-weight: 100;
+
+  padding-top: 20px;
+  letter-spacing: .20px;
+
+  color: #2f2e2e;
+`;
+
+
+
+
+
+
+
+
+
+// start About right hexagons
 
 const AboutRight = styled(AboutLeft)`
   width: 50%;
