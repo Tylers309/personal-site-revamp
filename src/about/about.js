@@ -79,6 +79,7 @@ const Wrapper = styled.div`
   height: 100%;
 
   position: relative;
+  border: 2px solid red;
 `;
 
 const AboutLeft = styled.div`
@@ -89,6 +90,10 @@ const AboutLeft = styled.div`
   justify-content: center;
 
   float: left;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 
 `;
 
