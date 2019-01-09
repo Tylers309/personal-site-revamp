@@ -4,6 +4,8 @@ import styled from 'styled-components';
 
 import Landing from './landing/landing';
 import About from './about/about';
+import Skills from './skills/skills';
+import Contact from './contact/contact';
 
 import './App.css';
 
@@ -17,6 +19,9 @@ class App extends Component {
 
         <About />
 
+        <Skills />
+
+        <Contact />
       </Wrapper>
     );
   }

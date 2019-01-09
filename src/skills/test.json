@@ -1,0 +1,16 @@
+
+
+{"developer": {
+  "stats": {
+    "firstName": "John",
+    "middleName": "Tyler",
+    "lastName": "Sutton",
+    "age": 17.5
+  }, 
+  "skills": {
+    "years": 2,
+    "frontend": ["html", "css", "javascript", "jquery", "react"],
+    "backend": ["node", "express", "mysql", "php"],
+    "design": ["pencil", "paper", "adobeXd"]
+  }
+}}
