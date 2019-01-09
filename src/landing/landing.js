@@ -23,17 +23,25 @@ class Landing extends Component {
 
         <Navigation />
 
-        <Cube />
+        <LandingLeft>
 
-        <Pyramid />
+          <Cube />
 
-        <Cylinder />
+          <Pyramid />
+
+          <Cylinder />
+        </LandingLeft>
+
+        <LandingRight>
+          <TriggerImg src={trigger} alt="Tyler Sutton" />
+
+          <EventImg src={eventListener} alt="Tyler Sutton" />
+        </LandingRight>
+        
 
         <Header />
 
-        <TriggerImg src={trigger} alt="Tyler Sutton" />
-
-        <EventImg src={eventListener} alt="Tyler Sutton" />
+        
 
       </Wrapper>
       
@@ -52,6 +60,25 @@ const Wrapper = styled.div`
 
 `;
 
+
+
+const LandingLeft = styled.div`
+  height: 100%;
+  width: 50%;
+
+  border: 2px solid red;
+
+  position: relative;
+
+  float: left;
+
+  @media (max-width: 768px) {
+    height: 50%;
+    width: 100%;
+  }
+`;
+
+const LandingRight = styled(LandingLeft)``;
 const TriggerImg = styled.img`
   height: auto;
   max-width: 35%;
@@ -75,3 +102,4 @@ max-width: 45%;
 
   transform: rotate(3deg);
   `;
+
