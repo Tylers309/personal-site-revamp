@@ -5,9 +5,8 @@
 
 .pyramid-gyro {
   position: absolute;
-  top: 60%;
-  left: 30%;
-  margin-left: -100px;
+  bottom: 20%;
+  right: 30%;
 	perspective: 1000px;
 	 perspective-origin: center;
 }
@@ -63,3 +62,60 @@
 
 
 
+
+@media screen and (max-width: 768px) {
+  
+  .pyramid-gyro {
+    position: absolute;
+    top: 50%;
+    right: 20%;
+  }
+  .pyramid-axis {
+    width: 100px;
+    
+	 transform-style: preserve-3d;
+
+   transform: rotateX(20deg) rotateY(70deg) rotateZ(0deg);
+  }
+  
+  .pyramid-wall {
+    position: absolute;
+    border: 50px solid transparent;
+  }
+  
+  .front {
+    bottom: -10px;
+    border-bottom: 100px solid #89E9FF;
+     transform: translateZ(12.5px) rotateX(30deg);
+  }
+  .back {
+    bottom: -10px;
+    border-bottom: 100px solid #89E9FF;
+     transform: translateZ(-12.5px) rotateY(180deg) rotateX(30deg);
+  }
+  .left {
+    bottom: -10px;
+    left: 38px;
+    border-bottom: 100px solid #5FC6E5;
+     transform: rotateY(270deg) translateX(-50px) rotateX(30deg);
+     transform-origin: center left;
+  }
+  .right {
+    bottom: -20px;
+    right: 75px;
+    border-bottom: 100px solid #5FC6E5;
+     transform: rotateY(-270deg) translateX(50px) rotateX(30deg);
+     transform-origin: top right;
+  }
+  .bottom {
+    width: 100px;
+    height: 100px;
+    background: #4EA8CB;
+    transform: rotateX(90deg) translateY(50px);
+  }
+  
+  
+  
+  
+  
+}

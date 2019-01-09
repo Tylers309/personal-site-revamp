@@ -38,4 +38,8 @@ const Text = styled.h1`
   font-weight: 100;
 
   color: #2f2e2e;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 `;

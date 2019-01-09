@@ -66,8 +66,6 @@ const LandingLeft = styled.div`
   height: 100%;
   width: 50%;
 
-  border: 2px solid red;
-
   position: relative;
 
   float: left;
@@ -79,9 +77,11 @@ const LandingLeft = styled.div`
 `;
 
 const LandingRight = styled(LandingLeft)``;
+
+
 const TriggerImg = styled.img`
   height: auto;
-  max-width: 35%;
+  max-width: 60%;
 
   position: absolute;
 
@@ -95,7 +95,7 @@ const TriggerImg = styled.img`
 `;
 
 const EventImg = styled(TriggerImg)`
-max-width: 45%;
+  max-width: 80%;
   top: 75%;
 
   right: 3%;

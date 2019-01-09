@@ -16,7 +16,7 @@ class About extends Component {
           <LeftHolder>
             <Header>About the guy behind the <code>&lt;code/&gt;</code></Header>
             <AboutText>
-              Hi, I am Tyler Sutton! I am a 17 year old Website Designer and Developer.
+              {/* Hi, I am Tyler Sutton! I am a 17 year old Website Designer and Developer.
               I started my journey into this awesome world of development all over one 
               thought about how the internet works. I read an article about the basics of the internet (ip addresses, servers) on <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work" target="_blank">MDN</a>.
               I read and read, not fully understanding it all, but still enjoying having someone able to answer my questions. I read some more until I stumbled upon a link
@@ -24,8 +24,9 @@ class About extends Component {
               taken a course in Visual Basic and C# *Yawn* but creating ugly calculators really didn't appeal to my 14 year old mind, until I discovered how easy it is to make beautiful websites. 
               I read all of Mozilla's articles read all of W3 schools articles on HTMl, CSS, Javascript and did all the tutorials I could find. And I started to code my own sites. The first (dozen) sites were (really) bad 
               but I kept on and grew more and more fond of the idea of sharing knowledge via the internet and I wanted to be a part of it more and more. So I created more and more test websites till I created my own and for 
-              friends and family. I keep refining my skills everyday. (In fact, this site you are on is it's third full iteration!) I hope you have found my story entertaining, that you understand a little more about me and my journey, and maybe help inspire you to start your own. 
+              friends and family. I keep refining my skills everyday. (In fact, this site you are on is it's third full iteration!) I hope you have found my story entertaining, that you understand a little more about me and my journey, and maybe help inspire you to start your own.  */}
 
+              I write code.
             </AboutText>
           </LeftHolder>
         </AboutLeft>
@@ -92,6 +93,9 @@ const AboutLeft = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
+
+    height: 50%;
+    width: 100%;
   }
 
 `;
@@ -107,6 +111,10 @@ const Header = styled.h2`
   font-weight: 100;
 
   color: #2f2e2e;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
 `;
 
 const AboutText = styled.p`
@@ -117,6 +125,11 @@ const AboutText = styled.p`
   letter-spacing: .20px;
 
   color: #2f2e2e;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+    letter-spacing: 0;
+  }
 `;
 
 
@@ -152,6 +165,11 @@ const Hexagon = styled.div`
 
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+  @media (max-width: 768px) {
+    width: 100px;
+    height: 100px;
+  }
 `;
 
 const EmptyHex = styled(Hexagon)`
@@ -163,6 +181,9 @@ const HexTopRow = styled.div`
   height: 150px;
   width: auto;
 
+  @media (max-width: 768px) {
+    height: 75px;
+  }
 `;
 
 
@@ -172,11 +193,20 @@ const HexMidRow = styled(HexTopRow)`
   
   //original 25px
   transform: translateY(-50px);
+
+  @media (max-width: 768px) {
+    padding-left: 50px;
+    transform: translateY(-25px);
+  }
 `;
 
 const HexBotRow = styled(HexTopRow)`
   //original 50px
   transform: translateY(-100px);
+
+  @media (max-width: 768px) {
+    transform: translateY(-50px);
+  }
 `;
 
 const Img = styled.img`
