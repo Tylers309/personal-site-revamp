@@ -21,6 +21,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#89e9ff', end
   transform: rotateZ(145deg);
 }
 
+
 .cylinder:before {
 	position: absolute;
 	left: 0;
@@ -41,4 +42,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#89e9ff', end
 	border-radius: 50px/25px;
 	/* background-color: #5FC6E5; */
 	content: '';
+}
+
+@media screen and (max-width: 768px) {
+	.cylinder {
+		width: 50px;
+		height: 150px;
+	}
+
+	.cylinder:before {
+		width: 50px;
+		height: 25px;
+		border-radius: 50px/25px;
+	}
+	
+	.cylinder:after {
+		width: 50px;
+		height: 25px;
+		border-radius: 50px/25px;
+	}
 }
