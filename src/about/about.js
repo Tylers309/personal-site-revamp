@@ -182,7 +182,7 @@ const HexBotRow = styled(HexTopRow)`
 
 const Img = styled.img`
  height: auto;
- max-width 100%;
+ max-width: 100%;
 
  position: absolute
 `;

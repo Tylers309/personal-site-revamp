@@ -47,10 +47,18 @@ const Wrapper = styled.div`
 
   display: grid;
 
+  padding-top: 5px;
+
+
   grid-template-columns: repeat(6, 1fr);
 
   grid-template-areas: 
   "nav-left . . . nav-right nav-right";
+
+  @media (max-width: 768px) {
+    grid-template-areas: 
+    "nav-left nav-left nav-right nav-right nav-right nav-right";
+  }
 
 `;
 
@@ -69,13 +77,17 @@ const NavRight = styled.div`
 
   display: flex;
   justify-content: center;
-  `;
+`;
 
 const NavHolder = styled.div` align-self: center; cursor: pointer;`;
 
 const NavHeader = styled.h1`
   font-size: 22px;
   font-weight: 300;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 
 `;
 
@@ -85,4 +97,8 @@ const NavLinks = styled.h2`
   font-weight: 100;
 
   word-spacing: 2em;
+
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
 `;
