@@ -76,8 +76,8 @@ export default About;
 
 
 const Wrapper = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 
   position: relative;
 `;
@@ -107,7 +107,7 @@ const LeftHolder = styled.div`
 `;
 
 const Header = styled.h2`
-  font-size: 45px;
+  font-size: 42px;
   font-weight: 100;
 
   color: #2f2e2e;
@@ -118,7 +118,7 @@ const Header = styled.h2`
 `;
 
 const AboutText = styled.p`
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 100;
 
   padding-top: 20px;

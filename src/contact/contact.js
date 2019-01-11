@@ -8,6 +8,7 @@ class Contact extends Component {
     return(
       <Wrapper>
         <WrapperHolder>
+          <Header>Contact Me</Header>
           <Input type="text" name="name" placeholder="Name" />
           <Input type="email" name="email" placeholder="Email" />
           <Textarea placeholder="Message" />
@@ -22,22 +23,39 @@ class Contact extends Component {
 export default Contact;
 
 const Wrapper = styled.div`
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 
   position: relative;
 
   display: flex;
   justify-content: center;
+
 `;
 
 const WrapperHolder = styled.div`
   align-self: center;
+  width: 30%;
+  height: 50%;
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
   
 `;
 
+const Header = styled.h1`
+  color: #2f2e2e;
+  font-size: 45px;
+  font-weight: 100; 
+
+  text-align: center;
+
+  margin-bottom: 50px;
+`;
+
 const Input = styled.input`
-  width: 300px;
+  width: 50%;
 
   padding: 12px 8px;
 
@@ -46,14 +64,23 @@ const Input = styled.input`
   margin: 25px auto;
 
   border: none;
+  color: #2f2e2e;
 
-  border-top: 4px solid #CECECE;
-  border-bottom: 4px solid #CECECE;
+  border-top: 2px solid #2f2e2e;
+  border-bottom: 2px solid #2f2e2e;
+
+  transition: 0.3s;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  &:hover {
+    border-left: 2px solid #2f2e2e;
+    border-right: 2px solid #2f2e2e;
+  }
 `;
 
 const Textarea = styled.textarea`
-  height: 200px;
-  width: 400px;
+  height: 50%;
+  width: 100%;
 
   padding: 12px 8px;
 
@@ -62,14 +89,24 @@ const Textarea = styled.textarea`
   resize: none;
 
   border: none;
+  
+  border-top: 2px solid #2f2e2e;
+  border-bottom: 2px solid #2f2e2e;
 
-  border-top: 4px solid #CECECE;
-  border-bottom: 4px solid #CECECE;
+  color: #2f2e2e;
+
+  transition: 0.3s;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  &:hover {
+    border-left: 2px solid #2f2e2e;
+    border-right: 2px solid #2f2e2e;
+  }
 
 `;
 
 const Button = styled.button`
-  padding: 12px 12px;
+  padding: 12px 32px;
 
   position: relative;
 
@@ -77,10 +114,22 @@ const Button = styled.button`
 
   margin: 25px auto;
 
+  cursor: pointer;
+
   border: none;
 
-  border-top: 4px solid #CECECE;
-  border-bottom: 4px solid #CECECE;
+  border-top: 2px solid #2f2e2e;
+  border-bottom: 2px solid #2f2e2e;
+  
 
   background-color: #fff;
+
+
+  transition: 0.3s;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  &:hover {
+    border-left: 2px solid #2f2e2e;
+    border-right: 2px solid #2f2e2e;
+  }
 `;

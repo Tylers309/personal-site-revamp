@@ -7,6 +7,8 @@ import About from './about/about';
 import Skills from './skills/skills';
 import Contact from './contact/contact';
 
+import Footer from './footer/footer';
+
 import './App.css';
 
 class App extends Component {
@@ -22,6 +24,8 @@ class App extends Component {
         <Skills />
 
         <Contact />
+
+        <Footer />
       </Wrapper>
     );
   }
@@ -31,8 +35,8 @@ export default App;
 
 
 const Wrapper = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 
   position: absolute;
 

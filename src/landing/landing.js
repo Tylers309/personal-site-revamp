@@ -53,10 +53,11 @@ export default Landing;
 
 
 const Wrapper = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 
   position: relative;
+
 
 `;
 
@@ -96,9 +97,8 @@ const TriggerImg = styled.img`
 
 const EventImg = styled(TriggerImg)`
   max-width: 80%;
-  top: 75%;
-
-  right: 3%;
+  top: 70%;
+  left: 13%;
 
   transform: rotate(3deg);
   `;
