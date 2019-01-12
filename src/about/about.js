@@ -26,7 +26,10 @@ class About extends Component {
               but I kept on and grew more and more fond of the idea of sharing knowledge via the internet and I wanted to be a part of it more and more. So I created more and more test websites till I created my own and for 
               friends and family. I keep refining my skills everyday. (In fact, this site you are on is it's third full iteration!) I hope you have found my story entertaining, that you understand a little more about me and my journey, and maybe help inspire you to start your own.  */}
 
-              I write code.
+              My name is Tyler Sutton I am a Front and Backend Developer from Meridian, 
+              Mississippi. I have been making websites for over two years now and 
+              am always looking to improve my skillset. As well as being a web developer I 
+              love to play the guitar 🎸 and video games 🎮
             </AboutText>
           </LeftHolder>
         </AboutLeft>
@@ -118,10 +121,9 @@ const Header = styled.h2`
 `;
 
 const AboutText = styled.p`
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 100;
-
-  padding-top: 20px;
+  padding: 50px 50px;
   letter-spacing: .20px;
 
   color: #2f2e2e;

@@ -8,12 +8,19 @@ class Contact extends Component {
     return(
       <Wrapper>
         <WrapperHolder>
-          <Header>Contact Me</Header>
-          <Input type="text" name="name" placeholder="Name" />
-          <Input type="email" name="email" placeholder="Email" />
-          <Textarea placeholder="Message" />
+          <WrapperLeft>
+            <Header>Contact Me</Header>
+            <Input type="text" name="name" placeholder="Name" />
+            <Input type="email" name="email" placeholder="Email" />
+            <Textarea placeholder="Message" />
 
-          <Button>Send</Button>
+            <Button>Send 🐑</Button>
+          </WrapperLeft>
+          
+
+          <WrapperRight>
+
+          </WrapperRight>
         </WrapperHolder>
       </Wrapper>
     )
@@ -35,13 +42,24 @@ const Wrapper = styled.div`
 
 const WrapperHolder = styled.div`
   align-self: center;
-  width: 30%;
+  width: 50%;
   height: 50%;
 
   @media (max-width: 768px) {
     width: 80%;
   }
   
+`;
+
+const WrapperLeft = styled.div`
+  width: 60%;
+  height: 100%;
+
+  float: left;
+`;
+
+const WrapperRight = styled(WrapperLeft)`
+  width: 40%;
 `;
 
 const Header = styled.h1`
