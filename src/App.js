@@ -7,7 +7,9 @@ import About from './about/about';
 import Skills from './skills/skills';
 import Contact from './contact/contact';
 
-import Footer from './footer/footer';
+
+
+// import Footer from './footer/footer';
 
 import './App.css';
 
@@ -22,10 +24,11 @@ class App extends Component {
         <About />
 
         <Skills />
-
+        
         <Contact />
+        
 
-        <Footer />
+        {/* <Footer /> */}
       </Wrapper>
     );
   }

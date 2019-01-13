@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
 
 import styled from 'styled-components';
+import ScrollableAnchor from 'react-scrollable-anchor';
+
+import instagram from './instagram.png';
+import github from './github.png';
 
 class Contact extends Component {
 
   render() {
     return(
+      <ScrollableAnchor id={'contact'}>
+
+      
       <Wrapper>
         <WrapperHolder>
           <WrapperLeft>
@@ -15,14 +22,19 @@ class Contact extends Component {
             <Textarea placeholder="Message" />
 
             <Button>Send 🐑</Button>
+            <LinksHolder>
+              <ImgHolder>
+              <a href="https://instagram.com/tylercodes" target="_blank"><Img src={instagram} alt="tylercodes" /></a>
+              <a href="https://github.com/tylers309" target="_blank"><Img src={github} alt="Tylers309" /></a>
+              
+              </ImgHolder>
+            </LinksHolder>
+            
           </WrapperLeft>
           
-
-          <WrapperRight>
-
-          </WrapperRight>
         </WrapperHolder>
       </Wrapper>
+      </ScrollableAnchor>
     )
   }
 }
@@ -30,7 +42,7 @@ class Contact extends Component {
 export default Contact;
 
 const Wrapper = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 
   position: relative;
@@ -38,12 +50,16 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
 
+
 `;
 
 const WrapperHolder = styled.div`
   align-self: center;
-  width: 50%;
+  width: 40%;
   height: 50%;
+
+  position: relative;
+  display: block;
 
   @media (max-width: 768px) {
     width: 80%;
@@ -52,14 +68,35 @@ const WrapperHolder = styled.div`
 `;
 
 const WrapperLeft = styled.div`
-  width: 60%;
+  width: 100%;
   height: 100%;
 
   float: left;
 `;
 
-const WrapperRight = styled(WrapperLeft)`
-  width: 40%;
+const LinksHolder = styled.div`
+  width: 100%;
+
+  align-self: center;
+
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 25px;
+`;
+
+const ImgHolder = styled.div`
+  align-self: center;
+`;
+
+const Img = styled.img`
+  height: 64px;
+  width: 64px;
+
+  display: block;
+  float: left;
+
+  margin: 15px;
 `;
 
 const Header = styled.h1`
@@ -93,6 +130,10 @@ const Input = styled.input`
   &:hover {
     border-left: 2px solid #2f2e2e;
     border-right: 2px solid #2f2e2e;
+  }
+
+  @media (max-width: 768px) {
+    width: 75%;
   }
 `;
 

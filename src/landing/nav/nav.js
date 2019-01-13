@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 
 import styled from 'styled-components';
 
-
-
 class Landing extends Component {
   render() {
     return (
-      <Wrapper>
+      <NavWrapper>
 
         <NavLeft>
           <NavHolder>
@@ -21,13 +19,17 @@ class Landing extends Component {
         <NavRight>
           <NavHolder>
             <NavLinks>
-              Who What Where
+              <Link href="#about">About</Link>
+              <Link href="#skills">Skills</Link>
+              <Link href="#contact">Contact</Link>
+                
+              
+              
             </NavLinks>
-            
           </NavHolder>
         </NavRight>
 
-      </Wrapper>
+      </NavWrapper>
       
     );
   }
@@ -36,7 +38,7 @@ class Landing extends Component {
 export default Landing;
 
 
-const Wrapper = styled.div`
+const NavWrapper = styled.div`
   width: 100%;
   height: 7%;
 
@@ -49,6 +51,7 @@ const Wrapper = styled.div`
 
   padding-top: 5px;
 
+  z-index: 2;
 
   grid-template-columns: repeat(6, 1fr);
 
@@ -92,13 +95,26 @@ const NavHeader = styled.h1`
 `;
 
 
-const NavLinks = styled.h2`
+const NavLinks = styled.div`
   font-size: 22px;
   font-weight: 100;
 
   word-spacing: 2em;
 
+
+  
+
   @media (max-width: 768px) {
     font-size: 15px;
   }
+`;
+
+
+const Link = styled.a`
+  color: #2f2e2e;
+
+  text-decoration: none;
+  
+  cursor: pointer;
+  margin: 0 15px;
 `;
