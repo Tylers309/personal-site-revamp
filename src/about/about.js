@@ -3,8 +3,12 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import ScrollableAnchor from 'react-scrollable-anchor';
 
-import luke from './pictures/luke.JPG';
-import tylerRaptor from './pictures/tylerRaptor.JPG';
+import tylerRaptor from './pictures/tylerRaptor.jpg';
+import sunset from './pictures/sunset.JPG';
+import dad from './pictures/dad.jpg';
+import f22 from './pictures/f22.JPG';
+import lawnChair from './pictures/lawnChair.jpg';
+import pacman from './pictures/pacman.jpg';
 
 import './hex.css';
 
@@ -40,7 +44,7 @@ class About extends Component {
             <RightHolder>
               <HexTopRow>
                 <Hexagon>
-                  <Img src={luke} alt="Tyler Sutton" />
+                  <Img src={dad} alt="Tyler Sutton" />
                 </Hexagon>
                 <EmptyHex />
                 <Hexagon>
@@ -49,24 +53,25 @@ class About extends Component {
               </HexTopRow>
               <HexMidRow>
                 <Hexagon>
-                  <Img src={tylerRaptor} alt="kajsdlkfj" />
+                  <Img src={sunset} alt="kajsdlkfj" />
                 </Hexagon>                
 
 
                 <Hexagon >
-                  <Img src={luke} alt="Tyler Sutton" />
+                  <Img src={lawnChair} alt="Tyler Sutton" />
                 </Hexagon>
-                <Hexagon>
-                </Hexagon>
+                <EmptyHex>
+                  
+                </EmptyHex>
               </HexMidRow>
               <HexBotRow>
                 <EmptyHex />
                 
                 <Hexagon>
-
+                  <Img src={f22} alt="Tyler Sutton" />
                 </Hexagon>  
                 <Hexagon>
-
+                  <Img src={pacman} alt="Tyler Sutton" />
                 </Hexagon>
               </HexBotRow>
 
