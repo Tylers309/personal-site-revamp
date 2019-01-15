@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import ScrollableAnchor from 'react-scrollable-anchor';
 
-import tylerRaptor from './pictures/tylerRaptor.jpg';
-import sunset from './pictures/sunset.jpg';
+import tylerRaptor from './pictures/tylerRaptor.JPG';
+import sunset from './pictures/sunset.JPG';
 import dad from './pictures/dad.jpg';
-import f22 from './pictures/f22.jpg';
+import f22 from './pictures/f22.JPG';
 import lawnChair from './pictures/lawnChair.jpg';
 import pacman from './pictures/pacman.jpg';
 
