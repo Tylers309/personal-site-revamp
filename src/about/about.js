@@ -4,9 +4,9 @@ import styled from 'styled-components';
 import ScrollableAnchor from 'react-scrollable-anchor';
 
 import tylerRaptor from './pictures/tylerRaptor.jpg';
-import sunset from './pictures/sunset.JPG';
+import sunset from './pictures/sunset.jpg';
 import dad from './pictures/dad.jpg';
-import f22 from './pictures/f22.JPG';
+import f22 from './pictures/f22.jpg';
 import lawnChair from './pictures/lawnChair.jpg';
 import pacman from './pictures/pacman.jpg';
 
