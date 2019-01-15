@@ -5,6 +5,7 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 
 import instagram from './instagram.png';
 import github from './github.png';
+import caution from './caution.png';
 
 class Contact extends Component {
 
@@ -16,12 +17,18 @@ class Contact extends Component {
       <Wrapper>
         <WrapperHolder>
           <WrapperLeft>
-            <Header>Contact Me</Header>
+            <FormContainer>
+              <Header>Contact Me</Header>
             <Input type="text" name="name" placeholder="Name" />
             <Input type="email" name="email" placeholder="Email" />
             <Textarea placeholder="Message" />
 
             <Button>Send 🐑</Button>
+
+            <CautionTape src={caution} alt="Caution" />
+            <Blocker />
+            </FormContainer>
+            
             <LinksHolder>
               <ImgHolder>
               <a href="https://instagram.com/tylercodes" target="_blank"><Img src={instagram} alt="tylercodes" /></a>
@@ -191,4 +198,32 @@ const Button = styled.button`
     border-left: 2px solid #2f2e2e;
     border-right: 2px solid #2f2e2e;
   }
+`;
+
+
+const FormContainer = styled.div`
+  position: relative;
+`;
+
+const CautionTape = styled.img`
+  position: absolute;
+
+  top: 25%;
+  margin: 0 auto;
+
+  max-height: 100%;
+  width: 100%;
+`;
+
+const Blocker = styled.div`
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+
+  z-index: 10;
 `;
