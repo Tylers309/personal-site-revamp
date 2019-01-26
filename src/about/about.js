@@ -3,12 +3,12 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import ScrollableAnchor from 'react-scrollable-anchor';
 
-import tylerRaptor from './pictures/tylerRaptor.JPG';
-import sunset from './pictures/sunset.JPG';
-import dad from './pictures/dad.jpg';
-import f22 from './pictures/f22.JPG';
-import lawnChair from './pictures/lawnChair.jpg';
-import pacman from './pictures/pacman.jpg';
+// import tylerRaptor from './pictures/tylerRaptor.JPG';
+// import sunset from './pictures/sunset.JPG';
+// import dad from './pictures/dad.jpg';
+// import f22 from './pictures/f22.JPG';
+// import lawnChair from './pictures/lawnChair.jpg';
+// import pacman from './pictures/pacman.jpg';
 
 import './hex.css';
 
@@ -44,21 +44,21 @@ class About extends Component {
             <RightHolder>
               <HexTopRow>
                 <Hexagon>
-                  <Img src={dad} alt="Tyler Sutton" />
+                  {/* <Img src={dad} alt="Tyler Sutton" /> */}
                 </Hexagon>
                 <EmptyHex />
                 <Hexagon>
-                  <Img src={tylerRaptor} alt="Tyler Sutton standing in front of a F-22 Raptor" />
+                  {/* <Img src={tylerRaptor} alt="Tyler Sutton standing in front of a F-22 Raptor" /> */}
                 </Hexagon>
               </HexTopRow>
               <HexMidRow>
                 <Hexagon>
-                  <Img src={sunset} alt="kajsdlkfj" />
+                  {/* <Img src={sunset} alt="kajsdlkfj" /> */}
                 </Hexagon>                
 
 
                 <Hexagon >
-                  <Img src={lawnChair} alt="Tyler Sutton" />
+                  {/* <Img src={lawnChair} alt="Tyler Sutton" /> */}
                 </Hexagon>
                 <EmptyHex>
                   
@@ -68,10 +68,10 @@ class About extends Component {
                 <EmptyHex />
                 
                 <Hexagon>
-                  <Img src={f22} alt="Tyler Sutton" />
+                  {/* <Img src={f22} alt="Tyler Sutton" /> */}
                 </Hexagon>  
                 <Hexagon>
-                  <Img src={pacman} alt="Tyler Sutton" />
+                  {/* <Img src={pacman} alt="Tyler Sutton" /> */}
                 </Hexagon>
               </HexBotRow>
 
@@ -104,7 +104,7 @@ const AboutLeft = styled.div`
 
   float: left;
 
-  @media (max-width: 768px) {
+  @media (max-width: 890px) {
     width: 100%;
 
     height: 50%;
@@ -128,6 +128,10 @@ const Header = styled.h2`
   @media (max-width: 768px) {
     font-size: 24px;
   }
+
+  @media (max-width: 900px) {
+    font-size: 32px;
+  }
 `;
 
 const AboutText = styled.p`
@@ -142,6 +146,10 @@ const AboutText = styled.p`
     font-size: 14px;
     letter-spacing: 0;
     padding: 50px 0;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 16px;
   }
 `;
 
@@ -178,11 +186,19 @@ const Hexagon = styled.div`
 
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-
-  @media (max-width: 768px) {
+  
+  // phones new (only for this case)
+  @media (max-width: 900px) {
     width: 100px;
     height: 100px;
   }
+
+  // laptops
+  @media (max-width: 1440px) {
+    width: 125px;
+    height: 125px;
+  }
+
 `;
 
 const EmptyHex = styled(Hexagon)`
@@ -194,8 +210,13 @@ const HexTopRow = styled.div`
   height: 150px;
   width: auto;
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     height: 75px;
+  }
+
+  // laptop
+  @media (max-width: 1440px) {
+    height: 93.75px;
   }
 `;
 
@@ -207,9 +228,15 @@ const HexMidRow = styled(HexTopRow)`
   //original 25px
   transform: translateY(-50px);
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     padding-left: 50px;
     transform: translateY(-25px);
+  }
+
+  // laptop
+  @media (max-width: 1440px) {
+    padding-left: 62.5px;
+    transform: translateY(-31.25px);
   }
 `;
 
@@ -217,8 +244,13 @@ const HexBotRow = styled(HexTopRow)`
   //original 50px
   transform: translateY(-100px);
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     transform: translateY(-50px);
+  }
+ 
+  // laptop
+  @media (max-width: 1440px) {
+    transform: translateY(-62.5px);
   }
 `;
 

@@ -17,7 +17,7 @@ class Contact extends Component {
       <Wrapper>
         <WrapperHolder>
           <WrapperLeft>
-            <FormContainer>
+            <FormContainer netlify>
               <Header>Contact Me</Header>
             <Input type="text" name="name" placeholder="Name" />
             <Input type="email" name="email" placeholder="Email" />
@@ -25,8 +25,6 @@ class Contact extends Component {
 
             <Button>Send 🐑</Button>
 
-            <CautionTape src={caution} alt="Caution" />
-            <Blocker />
             </FormContainer>
             
             <LinksHolder>
@@ -201,29 +199,7 @@ const Button = styled.button`
 `;
 
 
-const FormContainer = styled.div`
+const FormContainer = styled.form`
   position: relative;
 `;
 
-const CautionTape = styled.img`
-  position: absolute;
-
-  top: 25%;
-  margin: 0 auto;
-
-  max-height: 100%;
-  width: 100%;
-`;
-
-const Blocker = styled.div`
-  height: 100%;
-  width: 100%;
-
-  position: absolute;
-
-  top: 0;
-  left: 0;
-
-
-  z-index: 10;
-`;

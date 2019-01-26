@@ -99,7 +99,7 @@ const WrapperLeft = styled.div`
   display: flex;
   justify-content: center;
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     height: 50%;
     width: 100%;
   }
