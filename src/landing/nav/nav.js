@@ -19,7 +19,6 @@ class Landing extends Component {
         <NavRight>
           <NavHolder>
             <NavLinks>
-//               <Link href="#about">About</Link>
               <Link href="#skills">Skills</Link>
               <Link href="#contact">Contact</Link>
                 
