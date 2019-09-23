@@ -21,7 +21,7 @@ class Contact extends Component {
               <Header>Contact Me</Header>
             <Input type="text" name="name" placeholder="Name" />
             <Input type="email" name="email" placeholder="Email" />
-            <Textarea placeholder="Message" />
+            <Textarea name="message" placeholder="Message" />
 
             <Button>Send 🐑</Button>
 
