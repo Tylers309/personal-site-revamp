@@ -18,13 +18,13 @@ class Contact extends Component {
         <WrapperHolder>
           <WrapperLeft>
             <form name="contact" method="POST">
+              <input type="hidden" name="form-name" value="contact" />
               <Header>Contact Me</Header>
-            <Input type="text" name="name" placeholder="Name" />
-            <Input type="email" name="email" placeholder="Email" />
-            <Textarea name="message" placeholder="Message" />
+              <Input type="text" name="name" placeholder="Name" />
+              <Input type="email" name="email" placeholder="Email" />
+              <Textarea name="message" placeholder="Message" />
 
-            <Button>Send 🐑</Button>
-
+              <Button>Send 🐑</Button>
             </form>
             
             <LinksHolder>
