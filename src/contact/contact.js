@@ -17,7 +17,7 @@ class Contact extends Component {
       <Wrapper>
         <WrapperHolder>
           <WrapperLeft>
-            <form name="contact" netlify>
+            <form name="contact" method="POST">
               <Header>Contact Me</Header>
             <Input type="text" name="name" placeholder="Name" />
             <Input type="email" name="email" placeholder="Email" />
