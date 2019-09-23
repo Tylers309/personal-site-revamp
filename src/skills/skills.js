@@ -23,7 +23,7 @@ class Skills extends Component {
                     <Padding /><Padding /><Padding /><Key>"firstName"</Key>: <Value>"John"</Value>, <br />
                     <Padding /><Padding /><Padding /><Key>"middleName"</Key>: <Value>"Tyler"</Value>,<br />
                     <Padding /><Padding /><Padding /><Key>"lastName"</Key>: <Value>"Sutton</Value>, <br />
-                    <Padding /><Padding /><Padding /><Key>"age"</Key>: <Value>17.5</Value> <br />
+                    <Padding /><Padding /><Padding /><Key>"age"</Key>: <Value>18</Value> <br />
                     <Padding /><Padding /><CloseB inline/>, <br /><br />
 
                     <Padding /><Padding /><Key>"skills"</Key>: <OpenB inline />
@@ -31,7 +31,7 @@ class Skills extends Component {
                     <Padding /><Padding /><Padding /><Key>"years"</Key>: <Value>2</Value>, <br />
                     <Padding /><Padding /><Padding /><Key>"frontEnd"</Key>: [<Value>"html"</Value>, <Value>"css"</Value>, <Value>"javascript"</Value>, <Value>"react"</Value>, <Value>"jquery"</Value>], <br />
                     <Padding /><Padding /><Padding /><Key>"backend"</Key>: [<Value>"node"</Value>, <Value>"express"</Value>, <Value>"sql"</Value>, <Value>"php"</Value>], <br />
-                    <Padding /><Padding /><Padding /><Key>"design"</Key>: [<Value>"pencil"</Value>, <Value>"papaer"</Value>, <Value>"adobeXd"</Value>]<br />
+                    <Padding /><Padding /><Padding /><Key>"design"</Key>: [<Value>"pencil"</Value>, <Value>"paper"</Value>, <Value>"adobeXd"</Value>]<br />
                     <Padding /><Padding /><CloseB inline/> <br />
                     
                   <Padding /><CloseB inline/>
