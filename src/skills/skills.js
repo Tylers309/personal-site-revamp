@@ -28,7 +28,7 @@ class Skills extends Component {
 
                     <Padding /><Padding /><Key>"skills"</Key>: <OpenB inline />
                     <br />
-                    <Padding /><Padding /><Padding /><Key>"years"</Key>: <Value>2</Value>, <br />
+                    <Padding /><Padding /><Padding /><Key>"years"</Key>: <Value>3</Value>, <br />
                     <Padding /><Padding /><Padding /><Key>"frontEnd"</Key>: [<Value>"html"</Value>, <Value>"css"</Value>, <Value>"javascript"</Value>, <Value>"react"</Value>, <Value>"jquery"</Value>], <br />
                     <Padding /><Padding /><Padding /><Key>"backend"</Key>: [<Value>"node"</Value>, <Value>"express"</Value>, <Value>"sql"</Value>, <Value>"php"</Value>], <br />
                     <Padding /><Padding /><Padding /><Key>"design"</Key>: [<Value>"pencil"</Value>, <Value>"paper"</Value>, <Value>"adobeXd"</Value>]<br />
