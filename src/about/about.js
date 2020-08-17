@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import ScrollableAnchor from 'react-scrollable-anchor';
 
 import profileImg from './pictures/tylerRaptor.jpg';

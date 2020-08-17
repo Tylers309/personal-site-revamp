@@ -3,7 +3,7 @@ import ReactGA from 'react-ga';
 import styled from 'styled-components';
 
 import Landing from './landing/landing';
-import IT from './IT/IT';
+// import IT from './IT/IT';
 import About from './about/about';
 import Skills from './skills/skills';
 import Contact from './contact/contact';

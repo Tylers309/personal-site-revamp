@@ -6,24 +6,24 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 import background from './Quantum-Gradient.png';
 
 import perfectlyrenee from './renee.jpg';
-import ma from './ma.jpg';
-import deans from './deans.jpg';
+// import ma from './ma.jpg';
+// import deans from './deans.jpg';
 import scott from './scott.jpg';
 
-import filler from './filler.jpg';
+// import filler from './filler.jpg';
 
-function getPosition(element) {
-  var xPosition = 0;
-  var yPosition = 0;
+// function getPosition(element) {
+//   var xPosition = 0;
+//   var yPosition = 0;
 
-  while(element) {
-      xPosition += (element.offsetLeft - element.scrollLeft + element.clientLeft);
-      yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
-      element = element.offsetParent;
-  }
+//   while(element) {
+//       xPosition += (element.offsetLeft - element.scrollLeft + element.clientLeft);
+//       yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
+//       element = element.offsetParent;
+//   }
 
-  return { x: xPosition, y: yPosition };
-}
+//   return { x: xPosition, y: yPosition };
+// }
 
 
 
@@ -42,7 +42,7 @@ const setTrigger = (e) => {
 
     var viewportOffset = document.getElementById('hey').getBoundingClientRect();
     // these are relative to the viewport
-    var dist = viewportOffset.top;
+    dist = viewportOffset.top;
     console.log("dist: "+dist)
     console.log("z: "+z);
     // let distance =
@@ -114,7 +114,7 @@ componentDidMount() {
                     <div class="item-holder">
                         <img class="item-pic" src={perfectlyrenee} alt="Renee Sutton" />
 
-                        <h3 class="item-header"><a href="https://perfectlyrenee.com/" target="_blank">Renee Sutton</a></h3>
+                        <h3 class="item-header"><a href="https://perfectlyrenee.com/" target="_blank" rel="noopener noreferrer">Renee Sutton</a></h3>
 
                         <p class="item-text">
                           A site made for my mother, a woman of many talents who currently supports a team of 700+ women of a MLM company. Along with taking care of 3 hellion children, 3 dogs, one cat, and one husband.
@@ -127,7 +127,7 @@ componentDidMount() {
                     <div class="item-holder">
                         <img class="item-pic" src={scott} alt="Scott Stephens" />
 
-                        <h3 class="item-header"><a href="https://scottstephens.photo" target="_blank">Scott Stephens</a></h3>
+                        <h3 class="item-header"><a href="https://scottstephens.photo" target="_blank" rel="noopener noreferrer">Scott Stephens</a></h3>
 
                         <p class="item-text">
                           A showcase site for the most talented photographer I know, Mr. Scott Stephens. He a many time winner of photography awards, with an exceptional affinity for airplanes.
@@ -324,107 +324,107 @@ const ProjectsContainer = styled.div`
 
 
 
-const WrapperLeft = styled.div`
-  width: 50%;
-  height: 100%;
+// const WrapperLeft = styled.div`
+//   width: 50%;
+//   height: 100%;
 
-  float: left;
+//   float: left;
 
-  display: flex;
-  justify-content: center;
+//   display: flex;
+//   justify-content: center;
 
   
 
-  @media (max-width: 900px) {
-    height: 50%;
-    width: 100%;
-  }
-`;
+//   @media (max-width: 900px) {
+//     height: 50%;
+//     width: 100%;
+//   }
+// `;
 
-const WrapperRight = styled(WrapperLeft)``;
+// const WrapperRight = styled(WrapperLeft)``;
 
-const SkillsHolder = styled.div`
-  align-self: center;
-  width: 100%;
-  height: 100%;
+// const SkillsHolder = styled.div`
+//   align-self: center;
+//   width: 100%;
+//   height: 100%;
 
-  padding: 25px 25px 25px 25px;
+//   padding: 25px 25px 25px 25px;
 
-  /* border-radius: 20px; */
+//   /* border-radius: 20px; */
 
-  /* box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.2); */
+//   /* box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.2); */
 
-  -webkit-box-shadow: 0px 0px 36px 4px rgba(0,0,0,0.2);
-  -moz-box-shadow: 0px 0px 36px 4px rgba(0,0,0,0.2);
-  box-shadow: 0px 0px 36px 4px rgba(0,0,0,0.2);
+//   -webkit-box-shadow: 0px 0px 36px 4px rgba(0,0,0,0.2);
+//   -moz-box-shadow: 0px 0px 36px 4px rgba(0,0,0,0.2);
+//   box-shadow: 0px 0px 36px 4px rgba(0,0,0,0.2);
 
-  background-color: #282C34;
+//   background-color: #282C34;
 
-  @media (max-width: 768px) {
-    padding: 10px 0 10px 10px;
+//   @media (max-width: 768px) {
+//     padding: 10px 0 10px 10px;
 
-    width: 95%;
-  }
-
-
-`;
-
-const Key = styled.span` color: #E06C75; `;
-
-const Value = styled.span` 
-  color: #98C379; 
-`;
+//     width: 95%;
+//   }
 
 
+// `;
 
-const Padding = styled.div`
-  width: 20px;
-  display: inline-block;
+// const Key = styled.span` color: #E06C75; `;
+
+// const Value = styled.span` 
+//   color: #98C379; 
+// `;
+
+
+
+// const Padding = styled.div`
+//   width: 20px;
+//   display: inline-block;
   
-  @media (max-width: 768px) {
-    width: 5px;
-  }
-`;
+//   @media (max-width: 768px) {
+//     width: 5px;
+//   }
+// `;
 
 
 
 
-const RightHolder = styled.div`
-  align-self: center;
-`;
+// const RightHolder = styled.div`
+//   align-self: center;
+// `;
 
-const Header = styled.h1`
-  font-size: 45px;
-  font-weight: 100;
+// const Header = styled.h1`
+//   font-size: 45px;
+//   font-weight: 100;
 
-  text-align: center;
+//   text-align: center;
 
-  margin: 50px 0;
-  color: #2f2e2e;
+//   margin: 50px 0;
+//   color: #2f2e2e;
 
-  @media (max-width: 768px) {
-    font-size: 24px;
-  }
-`;
+//   @media (max-width: 768px) {
+//     font-size: 24px;
+//   }
+// `;
 
-const RightText = styled.p`
-  font-size: 19px;
-  font-weight: 100;
+// const RightText = styled.p`
+//   font-size: 19px;
+//   font-weight: 100;
 
-  width: 70%;
+//   width: 70%;
 
-  padding: 0 50px;
+//   padding: 0 50px;
 
-  margin: 0 auto;
+//   margin: 0 auto;
 
-  color: #2f2e2e;
+//   color: #2f2e2e;
 
-  @media (max-width: 768px) {
-    font-size: 14px;
+//   @media (max-width: 768px) {
+//     font-size: 14px;
 
-    padding: 0;
-  }
-`;
+//     padding: 0;
+//   }
+// `;
 /* <WrapperLeft>
               <SkillsHolder>
                 <OpenB />

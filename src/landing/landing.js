@@ -8,7 +8,7 @@ import Header from './header/header';
 import Cube from './cube/cube';
 // import Circle from './circle/circle';
 import Pyramid from './pyramid/pyramid';
-import Cylinder from './cylinder/cylinder';
+// import Cylinder from './cylinder/cylinder';
 
 import trigger from './pictures/trigger.png';
 import eventListener from './pictures/eventListener.png';

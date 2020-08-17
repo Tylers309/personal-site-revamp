@@ -46,8 +46,8 @@ const Text = styled.h1`
   }
 `;
 
-const SmallText = styled.h4`
-font-size: 24px; font-style: italic; font-weight: 100;
-@media (max-width: 768px) {
-    font-size: 14px;
-  }`;
+// const SmallText = styled.h4`
+// font-size: 24px; font-style: italic; font-weight: 100;
+// @media (max-width: 768px) {
+//     font-size: 14px;
+//   }`;

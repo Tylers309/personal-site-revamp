@@ -5,7 +5,7 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 
 import instagram from './instagram.png';
 import github from './github.png';
-import caution from './caution.png';
+// import caution from './caution.png';
 
 class Contact extends Component {
 
@@ -24,13 +24,13 @@ class Contact extends Component {
               <Input type="email" name="email" placeholder="Email" />
               <Textarea name="message" placeholder="Message" />
 
-              <Button>Send 🐑</Button>
+              <Button>Send</Button>
             </form>
             
             <LinksHolder>
               <ImgHolder>
-              <a href="https://instagram.com/tylercodes" target="_blank"><Img src={instagram} alt="tylercodes" /></a>
-              <a href="https://github.com/tylers309" target="_blank"><Img src={github} alt="Tylers309" /></a>
+              <a href="https://instagram.com/tylercodes" target="_blank" rel="noopener noreferrer"><Img src={instagram} alt="tylercodes" /></a>
+              <a href="https://github.com/tylers309" target="_blank" rel="noopener noreferrer"><Img src={github} alt="Tylers309" /></a>
               
               </ImgHolder>
             </LinksHolder>
@@ -199,7 +199,7 @@ const Button = styled.button`
 `;
 
 
-const FormContainer = styled.form`
-  position: relative;
-`;
+// const FormContainer = styled.form`
+//   position: relative;
+// `;
 

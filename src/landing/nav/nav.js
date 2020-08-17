@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 class Landing extends Component {
   render() {
@@ -121,26 +121,26 @@ const Link = styled.a`
 
 `;
 
-const thickSpin = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-  60% {
-    transform: rotate(360deg);
-  }
+// const thickSpin = keyframes`
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   60% {
+//     transform: rotate(360deg);
+//   }
   
-  100% { 
-    transform: rotate(360deg);
-  }
-`;
-const Thick = styled.span`
-  color: #2f2e2e;
-  font-size: 24px;
-  font-weight: 900;
-  display: inline-block;
-  /* animation: ${thickSpin} 2s linear infinite; */
-  @media (max-width: 768px) {
-    font-size: 15px;
-  }
-`;
+//   100% { 
+//     transform: rotate(360deg);
+//   }
+// `;
+// const Thick = styled.span`
+//   color: #2f2e2e;
+//   font-size: 24px;
+//   font-weight: 900;
+//   display: inline-block;
+//   /* animation: ${thickSpin} 2s linear infinite; */
+//   @media (max-width: 768px) {
+//     font-size: 15px;
+//   }
+// `;
 
