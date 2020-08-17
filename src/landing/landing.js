@@ -29,7 +29,7 @@ class Landing extends Component {
 
           <Pyramid />
 
-          <Cylinder />
+          {/* <Cylinder /> */}
         </LandingLeft>
 
         <LandingRight>

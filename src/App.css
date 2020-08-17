@@ -22,3 +22,81 @@ html, body, #root, .wrapper{
 
   overflow-X: hidden;
 }
+
+
+/* #items {
+  height: 100%;
+  min-width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  user-select: none;
+
+  position: relative;
+  padding-top: 5%;
+
+  cursor: pointer;
+  will-change: transform;
+} */
+
+.item {
+  width: 33.3333%;
+  height: 90%;
+  position: relative;
+
+  display: inline-flex;
+
+  border-right: 2px solid #b4b4b4;
+}
+
+.item-holder {
+  height: 100%;
+  width: 100%;
+
+  padding: 40px;
+  padding-top: 20%;
+  
+}
+
+.item-header a {
+  color: #fff;
+}
+.item-pic {
+  max-width: 80%;
+  display: block;
+
+  margin: 50px auto;
+
+  box-shadow: 0px 0px 16px 4px rgba(0,0,0,0.2);
+}
+
+.item-header {
+  font-size: 32px;
+  text-align: center;
+
+
+  color: #fff;
+}
+
+.item-text {
+  width: 60%;
+  height: auto;
+
+  margin: 50px 20%;
+
+  white-space: normal;
+
+  font-size: 14px;
+  
+  text-align: center;
+
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .item {
+      width: 100%;
+  }
+}
+
+

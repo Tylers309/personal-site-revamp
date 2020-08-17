@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 class Landing extends Component {
   render() {
@@ -10,7 +10,11 @@ class Landing extends Component {
         <NavLeft>
           <NavHolder>
             <NavHeader>
-              Tyler Sutton
+              <p>Tyler Sutton</p> 
+              <Link href="#about">About</Link><br />
+              <Link href="#projects">Projects</Link><br />
+              <Link href="#contact">Contact</Link>
+
             </NavHeader>
             
           </NavHolder>
@@ -19,11 +23,6 @@ class Landing extends Component {
         <NavRight>
           <NavHolder>
             <NavLinks>
-              <Link href="#about">About</Link>
-              <Link href="#skills">Skills</Link>
-              <Link href="#contact">Contact</Link>
-                
-              
               
             </NavLinks>
           </NavHolder>
@@ -87,9 +86,11 @@ const NavHolder = styled.div` align-self: center; cursor: pointer;`;
 const NavHeader = styled.h1`
   font-size: 22px;
   font-weight: 300;
+  line-height: 40px;
 
   @media (max-width: 768px) {
     font-size: 16px;
+    line-height: 20px;
   }
 
 `;
@@ -116,5 +117,30 @@ const Link = styled.a`
   text-decoration: none;
   
   cursor: pointer;
-  margin: 0 15px;
+  margin:  0px;
+
 `;
+
+const thickSpin = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(360deg);
+  }
+  
+  100% { 
+    transform: rotate(360deg);
+  }
+`;
+const Thick = styled.span`
+  color: #2f2e2e;
+  font-size: 24px;
+  font-weight: 900;
+  display: inline-block;
+  /* animation: ${thickSpin} 2s linear infinite; */
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+`;
+

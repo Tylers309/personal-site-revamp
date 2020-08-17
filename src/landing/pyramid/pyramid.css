@@ -6,7 +6,7 @@
 .pyramid-gyro {
   position: absolute;
   bottom: 20%;
-  right: 30%;
+  right: 50%;
 	perspective: 1000px;
 	 perspective-origin: center;
 }
@@ -68,7 +68,7 @@
   .pyramid-gyro {
     position: absolute;
     top: 50%;
-    right: 20%;
+    left: 20%;
   }
   .pyramid-axis {
     width: 100px;

@@ -1,0 +1,17 @@
+react https://www.iconfinder.com/icons/1174949/js_logo_react_react_js_icon
+
+phpmyadmin https://en.wikipedia.org/wiki/PhpMyAdmin
+
+mysql https://www.stickpng.com/img/icons-logos-emojis/tech-companies/mysql-logo-text
+
+express https://expressjs.com/
+
+node https://levelup.gitconnected.com/whats-new-in-node-12-e00111ffb83f?gi=8d1f3e149a3e
+
+js https://www.sitepoint.com/javascript/
+
+css https://en.wikipedia.org/wiki/Cascading_Style_Sheets
+
+html https://en.wikipedia.org/wiki/HTML
+
+wix https://www.wix.com/blog

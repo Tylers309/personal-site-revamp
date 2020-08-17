@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
-
+import ReactGA from 'react-ga';
 import styled from 'styled-components';
 
 import Landing from './landing/landing';
+import IT from './IT/IT';
 import About from './about/about';
 import Skills from './skills/skills';
 import Contact from './contact/contact';
-
-
+import './App.css';
+ReactGA.initialize('UA-107598464-2');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 // import Footer from './footer/footer';
 
-import './App.css';
+
 
 class App extends Component {
   
@@ -21,7 +23,12 @@ class App extends Component {
 
         <Landing />
 
+        {/* <IT /> */}
+        <Breaker />
+
         <About />
+
+        <Breaker />
 
         <Skills />
         
@@ -45,4 +52,13 @@ const Wrapper = styled.div`
 
   top: 0;
   left: 0;
+`;
+
+const Breaker = styled.div`
+  width: 100vw;
+  height: 5vh;
+
+  position: relative;
+
+
 `;

@@ -38,8 +38,16 @@ const Text = styled.h1`
   font-weight: 100;
 
   color: #2f2e2e;
+  
+  text-align: center;
 
   @media (max-width: 768px) {
     font-size: 20px;
   }
 `;
+
+const SmallText = styled.h4`
+font-size: 24px; font-style: italic; font-weight: 100;
+@media (max-width: 768px) {
+    font-size: 14px;
+  }`;
