@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import ScrollableAnchor from 'react-scrollable-anchor';
 
-import profileImg from './pictures/tylerRaptor.jpg';
+import profileImg from './tylerRaptor.jpg';
 
 
 class About extends Component {
