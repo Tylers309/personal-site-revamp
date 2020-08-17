@@ -69,7 +69,6 @@ state = {
 }
 
 
-
 componentDidMount() {
   this.setState({triggerHeight: document.getElementById('hey').clientHeight}, () => console.log(this.state.triggerHeight));
   this.setState({rootHeight: document.getElementById('root').clientHeight}, () => setTrigger(this));
