@@ -8,7 +8,7 @@ import About from './about/about';
 import Skills from './skills/skills';
 import Contact from './contact/contact';
 import './App.css';
-ReactGA.initialize('UA-107598464-2');
+ReactGA.initialize('UA-107598464-3');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 // import Footer from './footer/footer';
