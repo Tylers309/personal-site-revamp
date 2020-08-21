@@ -3,4 +3,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tylersutton.dev/robots.txt
+Sitemap: https://tylersutton.dev/sitemap_index.html
