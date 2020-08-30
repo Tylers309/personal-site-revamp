@@ -43,7 +43,7 @@ export default About;
 
 const Wrapper = styled.div`
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 
   position: relative;
 
@@ -63,6 +63,17 @@ const MainHolder = styled.div`
 
   position: relative;
 
+  @media (max-width: 1080px) {
+    height: auto;
+  }
+
+  @media (max-width: 650px) {
+    width: 80vw;
+  }
+
+  @media (max-width: 428px) {
+    width: 90vw;
+  }
 `;
 
 
@@ -75,6 +86,12 @@ const TextHolder = styled.div`
 
   display: flex;
   justify-content: center;
+
+  @media (max-width: 1080px) {
+    width: 100%;
+    height: auto;
+    float: none;
+  }
 `;
 
 
@@ -111,6 +128,13 @@ const ImageHolder = styled.div`
 
   display: flex;
   justify-content: center;
+
+  @media (max-width: 1080px) {
+    width: 100%;
+    height: auto;
+    float: none;
+    padding: 20px;
+  }
 `;
 
 const AboutImage = styled.img`
@@ -122,6 +146,10 @@ const AboutImage = styled.img`
   border-radius: 50%;
   /* border: 10px solid #a8a8a8; */
 
-  box-shadow: 0, 0, 8px, 4px, rgba(0, 0, 0, 0.2);
+  box-shadow: 0, 0, 8px, 4px, rgba(0, 0, 0, 1);
+
+  @media (max-width: 1080px) {
+    max-width: 30%;
+  }
 
 `;
