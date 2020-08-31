@@ -25,7 +25,7 @@ class About extends Component {
 
                 <AboutText>
                   My name is Tyler Sutton, I'm 19 years old and have been writing websites for ~5 years. I enjoy creating and learning new things, I'm proficient in 
-                  front-end and backend development from react to node. In the real life I'm the IT Administrator certified 
+                  front-end and backend development from react to node. In the real life I'm an IT Tech certified 
                   in CompTIA's Security+, currently working on my Network+<br/> <br/> I appreciate you looking at my website and hope to work with you in the future!
 
                 </AboutText>
